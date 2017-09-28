@@ -11,7 +11,7 @@ namespace Task4
         public static void Intersect(int[] arr1, int[] arr2)
         {
             List<int> temp=new List<int>();
-            if (arr1.Length < arr2.Length)
+            if (arr1.Length <= arr2.Length)
             {
                 for (int i = 0; i < arr1.Length; i++)
                 {
@@ -37,7 +37,7 @@ namespace Task4
                     }
                 }
             }
-           foreach(var item in temp)
+           foreach(var item in temp.Distinct())
            {
                Console.Write(item + " ");
            }
