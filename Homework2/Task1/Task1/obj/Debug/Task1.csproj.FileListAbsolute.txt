@@ -1,7 +1,0 @@
-C:\Users\Светлозар\Desktop\Нова папка\Homework2\Task1\Task1\bin\Debug\Task1.exe.config
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\bin\Debug\Task1.exe.config
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\bin\Debug\Task1.exe
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\bin\Debug\Task1.pdb
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\obj\Debug\Task1.exe
-C:\Users\Светлозар\Desktop\BootCamp\Homework2\Task1\Task1\obj\Debug\Task1.pdb
