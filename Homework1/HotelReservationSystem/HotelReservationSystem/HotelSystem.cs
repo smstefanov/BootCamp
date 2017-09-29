@@ -45,7 +45,7 @@ namespace HotelReservationSystem
                             tempRoom.RoomOccupant = nameOccupant;
                             using (StreamWriter sw = File.AppendText(@"D:\WriteLines.txt"))
                             {
-                                sw.WriteLine(tempRoom.ID + " - " + nameOccupant);
+                                sw.WriteLine(nameOccupant);
                             }
                             logger.Info(nameOccupant + " reserves room: " + tempRoom.ID + " " + tempRoom.ToString());
                             Console.WriteLine(tempRoom.ToString());
@@ -92,7 +92,7 @@ namespace HotelReservationSystem
                         tempRoom.RoomOccupant = nameOccupant;
                         using (StreamWriter sw = File.AppendText(@"D:\WriteLines.txt"))
                         {
-                             sw.WriteLine(tempRoom.ID + " - " + nameOccupant);
+                             sw.WriteLine(nameOccupant);
                         }
                         logger.Info(nameOccupant + " reserves room: " + tempRoom.ID + " " + tempRoom.ToString());
                         Console.WriteLine(tempRoom.ToString());
@@ -128,7 +128,7 @@ namespace HotelReservationSystem
                             tempRoom.RoomOccupant = nameOccupant;
                             using (StreamWriter sw = File.AppendText(@"D:\WriteLines.txt"))
                             {
-                                sw.WriteLine(tempRoom.ID + " - " + nameOccupant);
+                                sw.WriteLine(nameOccupant);
                             }
                             logger.Info(nameOccupant + " reserves room: " + tempRoom.ID + " " + tempRoom.ToString());
                             Console.WriteLine(tempRoom.ToString());
@@ -162,7 +162,6 @@ namespace HotelReservationSystem
                             break;
                         }
                     }
-
                     break;
             }
         }
@@ -182,8 +181,7 @@ namespace HotelReservationSystem
                     {
                         if (nameOccupant.Equals(s))
                         {
-                            Console.WriteLine("Your reservation is cancelled");
-                            
+                            Console.WriteLine("Your reservation is cancelled!");
                             isNameFound = true;
                             break;
                         }
@@ -203,7 +201,7 @@ namespace HotelReservationSystem
         }
         public static void Main(string[] args)
         {
-                       List<Room> rooms = new List<Room>();
+            List<Room> rooms = new List<Room>();
             rooms.Add(new DeluxRoom("single", "vacant", 1));
             rooms.Add(new DeluxRoom("double", "occupied",2));
             rooms.Add(new DeluxRoom("double", "vacant",3));
@@ -224,8 +222,7 @@ namespace HotelReservationSystem
             Console.WriteLine("3. Exit.");
             Console.WriteLine("Please enter a number from the menu for your choice.");
             usersChoice = Convert.ToInt32(Console.ReadLine());
-
-           
+                       
             switch (usersChoice)
             {
                 case 1:
